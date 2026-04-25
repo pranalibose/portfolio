@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Pranali Bose</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <a href="index.html" class="nav-logo">PRANALI<span>BOSE</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="speaking.html">Events</a>
+                <a href="services.html" class="active">Services</a>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-primary nav-cta" onclick="openBookingModal()">Work With Me</a>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="services.html">Services</a>
+        <a href="mailto:contact@pranalibose.com" class="btn btn-primary" style="margin-top: 20px;">Work With Me</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="section section-alt" style="padding-top: 140px; text-align: center;">
+        <div class="container">
+            <div class="fade-up">
+                <p class="section-label">How I Can Help</p>
+                <h1 class="section-title">Specialized Solutions for <span class="gradient-text">Data & AI</span></h1>
+                <p class="section-subtitle" style="margin: 0 auto;">Tailored consulting, mentorship, and training
+                    programs designed to drive real-world impact and career growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Mentorship -->
+            <div class="service-detail fade-up" id="mentorship">
+                <div class="service-detail-content">
+                    <p class="tagline">Empowering Future Leaders</p>
+                    <h3>1:1 Career Mentorship</h3>
+                    <p>Navigate the complex landscape of Data Science and AI with a seasoned professional by your side.
+                        I provide structured guidance tailored to your current level and future goals.</p>
+                    <ul>
+                        <li>Portfolio review and project selection</li>
+                        <li>Technical interview preparation (ML, SQL, Python)</li>
+                        <li>Career roadmap and transition strategy</li>
+                        <li>Personal branding and networking advice</li>
+                    </ul>
+                    <div class="who-for">
+                        <h4>Who it's for</h4>
+                        <p>Aspiring Data Scientists, students, and professionals looking to transition into AI roles.
+                        </p>
+                    </div>
+                    <a href="https://topmate.io/pranali_bose" target="_blank" class="btn btn-primary"
+                        style="margin-top: 24px;">Book Mentorship Session</a>
+                </div>
+                <div class="service-detail-visual">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 3rem;"><i
+                            class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Launch Your Career</h3>
+                    <p>Get the insights you won't find in textbooks.</p>
+                </div>
+            </div>
+
+            <!-- Consulting -->
+            <div class="service-detail fade-up" id="consulting">
+                <div class="service-detail-visual">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 3rem;"><i
+                            class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Scalable AI Solutions</h3>
+                    <p>Building models is easy; scaling them is hard.</p>
+                </div>
+                <div class="service-detail-content">
+                    <p class="tagline">Strategic Data Transformation</p>
+                    <h3>AI & Data Consulting</h3>
+                    <p>Helping organizations leverage data and AI to solve business problems, optimize operations, and
+                        create innovative products.</p>
+                    <ul>
+                        <li>AI Strategy and Roadmap development</li>
+                        <li>Proof of Concept (PoC) design and validation</li>
+                        <li>Model deployment and scaling strategies</li>
+                        <li>Data governance and infrastructure advisory</li>
+                    </ul>
+                    <div class="who-for">
+                        <h4>Who it's for</h4>
+                        <p>Startups and enterprises looking to integrate AI into their business processes.</p>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary" style="margin-top: 24px;"
+                        onclick="openBookingModal()">Book a Strategy Call</a>
+                </div>
+            </div>
+
+            <!-- Workshops -->
+            <div class="service-detail fade-up" id="workshops">
+                <div class="service-detail-content">
+                    <p class="tagline">Continuous Learning</p>
+                    <h3>Workshops & Corporate Training</h3>
+                    <p>Upskill your team with hands-on, intensive training sessions on the latest in Generative AI,
+                        LLMs, and Machine Learning.</p>
+                    <ul>
+                        <li>Generative AI & LLM Fundamentals</li>
+                        <li>Hands-on Fine-tuning of LLMs</li>
+                        <li>Practical Machine Learning for Developers</li>
+                        <li>Data Science Lifecycle for Decision Makers</li>
+                    </ul>
+                    <div class="who-for">
+                        <h4>Who it's for</h4>
+                        <p>Corporate teams, universities, and tech communities looking for deep-dive technical sessions.
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-primary" style="margin-top: 24px;"
+                        onclick="openBookingModal()">Inquire About Workshops</a>
+                </div>
+                <div class="service-detail-visual">
+                    <div class="service-icon" style="width: 100px; height: 100px; font-size: 3rem;"><i
+                            class="fa-solid fa-microchip"></i></div>
+                    <h3>Knowledge Sharing</h3>
+                    <p>Empowering teams through expert-led training.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>PRANALI<span>BOSE</span></h3>
+                    <p>Helping you build, scale & succeed with Data & AI.</p>
+                </div>
+                <div>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="mailto:pranalibose01@gmail.com"><i class="fa-solid fa-envelope"></i>
+                                pranalibose01@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/pranalibose/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://topmate.io/pranali_bose" target="_blank"><i
+                                    class="fa-solid fa-calendar-check"></i> Topmate</a></li>
+                        <li><a href="https://medium.com/@pranalibose" target="_blank"><i
+                                    class="fa-brands fa-medium"></i> Medium</a></li>
+                        <li><a href="https://github.com/pranalibose" target="_blank"><i class="fa-brands fa-github"></i>
+                                GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pranali Bose. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/pranalibose" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/pranalibose/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://medium.com/@pranalibose" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                    <a href="https://topmate.io/pranali_bose" target="_blank"><i
+                            class="fa-solid fa-calendar-check"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <button class="modal-close" onclick="closeBookingModal()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-content contact-modal-content">
+            <div class="modal-body">
+                <p class="section-label">Get In Touch</p>
+                <h2>Let's build something <span class="gradient-text">extraordinary</span></h2>
+                <p style="margin-bottom: 32px; color: var(--text-secondary);">Fill out the form or schedule a direct
+                    call via Calendly.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="contact-grid" style="grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                        <div class="contact-form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="contact-form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="contact-form-group" style="margin-bottom: 16px;">
+                        <label>Subject</label>
+                        <select required>
+                            <option value="">Select a service</option>
+                            <option value="consulting">AI & Data Consulting</option>
+                            <option value="mentorship">1:1 Career Mentorship</option>
+                            <option value="workshop">Speaking & Workshops</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="contact-form-group" style="margin-bottom: 24px;">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project or goals..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+            <div class="modal-image calendly-column"
+                style="background: var(--bg-alt); padding: 20px; overflow-y: auto; max-height: 90vh;">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/pranalibose_"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
