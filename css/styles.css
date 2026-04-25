@@ -42,7 +42,8 @@ ul{list-style:none}
 .hamburger span{width:24px;height:2px;background:var(--text);transition:var(--transition)}
 .mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--bg);padding:40px 24px;flex-direction:column;gap:24px;z-index:999}
 .mobile-menu.active{display:flex}
-.mobile-menu a{font-size:1.2rem;font-weight:500;padding:12px 0;border-bottom:1px solid var(--border)}
+.mobile-menu a:not(.btn){font-size:1.2rem;font-weight:500;padding:12px 0;border-bottom:1px solid var(--border)}
+.mobile-menu .btn{text-align:center;justify-content:center;display:flex}
 
 /* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;padding-top:var(--nav-h);position:relative;overflow:hidden;background:linear-gradient(135deg,#f8f9fc 0%,#eef0ff 50%,#f5f0ff 100%)}
@@ -218,8 +219,8 @@ ul{list-style:none}
 
 /* Responsive */
 @media(max-width:1024px){
-.hero-content,.about-hero{grid-template-columns:1fr}
-.hero-image{display:none}
+.hero-content,.about-hero{grid-template-columns:1fr;gap:40px}
+.hero-image{margin:0 auto;max-width:350px;display:block}
 .hero-text h1{font-size:2.8rem}
 .metrics{grid-template-columns:repeat(2,1fr)}
 .events-grid,.services-grid,.blog-grid,.skills-categories{grid-template-columns:repeat(2,1fr)}
