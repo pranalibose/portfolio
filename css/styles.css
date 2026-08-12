@@ -501,3 +501,62 @@ ul{list-style:none}
     width: 20px;
     border-radius: 10px;
 }
+
+/* Event Card Image Placeholder */
+.event-card-placeholder {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card-placeholder i {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.event-card:hover .event-card-placeholder i {
+    transform: scale(1.15);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.event-card-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1), transparent 60%);
+}
+
+.event-card:hover .event-card-placeholder::before {
+    opacity: 1;
+}
+
+.placeholder-google-io {
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 30%, #FBBC05 60%, #EA4335 100%);
+}
+
+.placeholder-razorpay {
+    background: linear-gradient(135deg, #072654 0%, #2563eb 50%, #528FF0 100%);
+}
+
+.placeholder-myntra {
+    background: linear-gradient(135deg, #ff3f6c 0%, #ff6b8a 50%, #ff527b 100%);
+}
+
+.placeholder-sarvam {
+    background: linear-gradient(135deg, #0f172a 0%, #6366f1 50%, #a78bfa 100%);
+}
+
+.placeholder-masquerade {
+    background: linear-gradient(135deg, #7c3aed 0%, #c026d3 50%, #f472b6 100%);
+}
+
+.placeholder-dsa {
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+}
